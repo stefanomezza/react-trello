@@ -16,7 +16,7 @@ class NewCard extends Component {
   render() {
     const {onCancel} = this.props
     return (
-      <div style={{background: '#E3E3E3'}}>
+      <div style={{background: '#E3E3E3'}} onKeyPress={(event) => {if(event.key == 'Enter') this.handleAdd()}}>
         <CardWrapper>
           <CardHeader>
             <CardTitle>
